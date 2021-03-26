@@ -27,12 +27,12 @@
 
 
 
-NOTE:- If you are adding some model in models.py or changing something don't forget to make migrations 
+    NOTE:- If you are adding some model in models.py or changing something don't forget to make migrations 
 
-    python manage.py makemigrations
+        python manage.py makemigrations
 
-and migrate it to database
+    and migrate it to database
 
-    python manage.py migrate
+        python manage.py migrate
 
 
