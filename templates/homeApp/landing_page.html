@@ -1,0 +1,124 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+  
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg' %})">
+            <div class="carousel-container">
+              <div class="container" >
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Credit Card Fraud Detection System</span></h2>
+                <p class="animate__animated animate__fadeInUp">Complete Solution for credit card fraud detection</p>  </div>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2>Files and User Management</h2>
+                <p class="animate__animated animate__fadeInUp">Management of credit card and files</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Latest Technology And Infrastructure Usage</h2>
+                <p class="animate__animated animate__fadeInUp">Latest Technology And Infrastructure</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+  
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+  
+      </div>
+    </section><!-- End Hero -->
+  
+    </main>
+  
+       <!-- ======= Team Section ======= -->
+       <section id="team" class="team section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>We are learning and growing together. Our team is cold as like ice and our work is  hot as like sun.</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/raj.jpeg' %}" alt="">
+                <h4>Raj Parmar</h4>
+                <span>Chief Executive Officer</span>
+                <p>
+                  Having 20+ years of experience in  it and marketing industry and have been providing his experience  to us like sunshine.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/shweta.jpeg' %}" alt="">
+                <h4>Shweta Patel</h4>
+                <span>Product Manager</span>
+                <p>
+                    Anant has 15+ years of experience in building high-performance teams in the areas of cloud operations, customer support, customer success, and product management
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/sid.jpeg' %}" alt="">
+                <h4>Sidhdhrajsinh Rana </h4>
+                <span>CTO</span>
+                <p>
+                    Shivang has 18+ years of experience in building high-performance engineering teams in the areas of Enterprise Security and Telecommunications business.  </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Team Section -->
+{% endblock %}
