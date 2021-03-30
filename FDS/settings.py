@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+LOGIN_REDIRECT_URL = '/home_page'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
