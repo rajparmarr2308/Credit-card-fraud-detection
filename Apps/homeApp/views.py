@@ -4,6 +4,10 @@ from django.contrib.auth import get_user_model, authenticate
 from django.contrib.auth import authenticate, login, logout
 def base(request):
     return render(request,'homeApp/landing_page.html')
+    
+def reports(request):
+    return render(request,'homeApp/reports.html')
+
 def userLogout(request):
     try:
       del request.session['username']
@@ -11,6 +15,8 @@ def userLogout(request):
       pass
     logout(request)
     return HttpResponseRedirect('/') 
+    
+
 def login2(request):
     data = {}
     if request.method == "POST":
@@ -20,7 +26,7 @@ def login2(request):
         print(user)
         if user:
             login(request, user)
-            return HttpResponseRedirect('/home_page')
+            return HttpResponseRedirect('/')
         
         else:    
             data['error'] = "Username or Password is incorrect"
@@ -33,5 +39,5 @@ def login2(request):
 def about(request):
     return render(request,'homeApp/about.html')
 
-def home(request):
-    return render(request,'homeApp/home.html')
+def dashboard(request):
+    return render(request,'homeApp/dashboard.html')

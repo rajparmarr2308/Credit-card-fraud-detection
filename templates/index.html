@@ -42,15 +42,16 @@
 
           {% if request.user.is_authenticated %}
    
-          <li><a class="nav-link scrollto" href="/">Welcome Page</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'dashboard' %}">Dashboard</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'reports' %}">Reports</a></li>
           <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
       
           <li><a class="getstarted scrollto" href="{% url 'userLogout' %}">LOGOUT</a></li>
 
           <h2 style="margin-left: 20px;"> Hello  {{request.user.username}} </h2>
           {% else %}
-          <li><a class="nav-link scrollto" href="/">Welcome Page</a></li>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
           <li><a class="getstarted scrollto" href="{% url 'login2' %}">LOGIN</a></li>
           {% endif %}
