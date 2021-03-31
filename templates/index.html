@@ -15,6 +15,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Vendor CSS Files -->
+  
   <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
@@ -22,12 +23,16 @@
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
   <!-- Template Main CSS File -->
+  {% block css %}
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-  <style>
-    {% block css %}
-    {% endblock %}
-  </style>
+  {% endblock %}
 </head>
+
+<style>
+{% block style %}
+
+{% endblock %}
+</style>
 
 <body>
 
@@ -44,9 +49,27 @@
    
           <li><a class="nav-link scrollto" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="{% url 'dashboard' %}">Dashboard</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'reports' %}">Reports</a></li>
           <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
-      
+          <li class="dropdown">
+            <a class="dropdown-toggle scrollto" data-toggle="dropdown" href="#">Administration
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'upload_credit_data' %}">Upload Credit Data Files</a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle scrollto" data-toggle="dropdown" href="#">Reports
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'reports' %}">Files Reports</a></li>
+              
+            </ul>
+          </li>
+    
+          
+          
+
           <li><a class="getstarted scrollto" href="{% url 'userLogout' %}">LOGOUT</a></li>
 
           <h2 style="margin-left: 20px;"> Hello  {{request.user.username}} </h2>
@@ -103,6 +126,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+  
   {% block js %}
 {% endblock %}
 </body>

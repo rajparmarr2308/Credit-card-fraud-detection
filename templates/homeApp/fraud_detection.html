@@ -1,0 +1,41 @@
+
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<main id="main" >
+
+  <!-- ======= Hero Section ======= -->
+  <section id="homesection" style="padding: 0px 0px;">
+	<!--__________________________________ header-box______________________________________________ -->
+	<div id="header-container">
+		<h1 id="header2">FRAUD DETECTION</h1>
+	</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+	<div class="fraud-container">
+		<div class="fraud-header-container">
+			<h3 class="fraud-header">CHOOSE TYPE OF DATA YOU WANT TO CHECK FOR DETECTING FRAUD</h3>
+		</div>
+		<div id="fraud-buttons-container">
+			<a href=""><div class="fraud-buttons">ENTER FORM DATA MANUALLY</div></a>
+			<a href=""><div class="fraud-buttons">UPLOAD SINGLE CSV RECORD</div></a>
+			<a href=""><div class="fraud-buttons">UPLOAD MULTIPLE CSV RECORD</div></a>
+		</div>
+	</div>
+  </section><!-- End Hero -->
+
+  </main>
+
+  
+{% endblock %}
+
+	

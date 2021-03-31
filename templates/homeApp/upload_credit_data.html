@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+{% block style %}
+#upload-container{
+	margin: 14px auto;
+}
+{% endblock %}
+{% block content %}
+<main id="main" >
+
+  <!-- ======= Hero Section ======= -->
+  <section id="homesection" style="padding: 0px 0px;">
+ <!--__________________________________ header-box______________________________________________ -->
+ <div id="header-container">
+	<h1 id="header2">Upload Credit Data Files</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div id=upload-container>
+	<div id=upload-header-container>
+		<h3 id="upload-header">UPLOAD CREDIT CARD DATASET</h3>
+	</div>
+	<div class="upload">
+		<form class="upload-form">
+			<label for="filename">File Name</label><br>
+			<input type="text" name="" id="filename" placeholder="File Name"><br>
+			<label >Upload Credit Card Dataset File</label><br>
+			<input  id="file" type="File" name="file"><br>
+			<label for="description">Description of the File</label><br>
+			<textarea placeholder="Description" id="description"></textarea><br>
+			<input id="btn" type="button" name="" value="SUBMIT">
+		</form>
+	</div>
+</div>
+  </section><!-- End Hero -->
+
+  </main>
+
+  
+{% endblock %}
+
+	

@@ -4,14 +4,50 @@
 Home | Fraud Detection System
 {% endblock %}
 
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
 {% block content %}
-<main id="main">
+<main id="main" >
 
     <!-- ======= Hero Section ======= -->
-    <section id="homesection">
-     This is Report Section
+    <section id="homesection" style="padding: 0px 0px;">
+         <!--__________________________________ header-box______________________________________________ -->
+ <div id="header-container">
+	<h1 id="header2">ALL CREDIT CARD DATASET</h1>
+
+</div>
+        <table id="example" class="table table-striped" style="width:70%;margin: 1% 10%;" >
+            <thead style="background-color: brown;text-align: center;">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>File name</th>
+                    <th>Original Filename</th>
+                    <th>Action</th>
+                    
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr>
+                    <td>1</td>
+                    <td>deasease data set</td>
+                    <td>credit.csv</td>
+                    <td>
+                        <a href="#"><button type="button" class="btn btn-primary">View Data</button></a>
+                        <a href="#"><button type="button" class="btn btn-secondary">Delete</button></a>
+                        <a href="{% url 'prediction_button' %}"><button type="button" class="btn btn-success">Prediction</button></a>
+                        <a href="#"><button type="button" class="btn btn-danger">Analysis</button></a>
+                        
+                </tr>
+            </tbody> 
+        </table>   
+     
+
     </section><!-- End Hero -->
   
     </main>
   
 {% endblock %}
+

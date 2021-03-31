@@ -1,0 +1,148 @@
+html,body{
+	margin-top: 0px;
+	padding : 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family: Times New Roman;
+}
+
+/* ________ header box___________________________________  */
+#header-container{
+	background-color:#5cb874;
+	height: 100px;
+	box-sizing: border-box;
+}
+#header2{
+	color : #FFFFFF;
+	width: 70%;
+	margin: auto;
+	padding-top: 30px;
+}
+/* ___________________________________________For dahsboard_____________________________________________________________ */
+
+/* ____________________main-box______________________________ */
+
+#main-container{
+	width: 70%;
+	margin:auto;
+	height: 250px;
+	margin-top: 10px; 
+	display: flex;
+	flex-direction: row;
+}
+#main-container .inner-box{
+
+	width: 200px;
+	height: 200px;
+	margin : auto auto;
+	border : 1px solid black;
+}
+#main-container .inner-box .circle{
+	fill: #5cb874;
+}
+
+/* _____________________________________________  Fraud detection  ________________________________________ */
+
+/* ________________________main-box__________________________________ */
+.fraud-container{
+	width: 60%;
+	
+	border: 1px solid black;
+	margin: auto auto;
+	margin-top: 30px;
+}
+.fraud-container .fraud-header-container{
+	background-color:#5cb874; 
+	margin-top: 0px ;
+	border: 1px solid black;
+}
+.fraud-container .fraud-buttons-container{
+	display: flex;
+	flex-direction:column;
+	margin: 10px;
+	padding: 20px;
+}
+.fraud-container .fraud-header-container .fraud-header{
+	text-align: center;
+	color: #FFFFFF;
+}
+.fraud-container #fraud-buttons-container .fraud-buttons{
+	margin: 20px auto 20px auto;
+	padding: 15px;
+	width: 60%;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	background-color: #C95426;
+}
+.fraud-container #fraud-buttons-container a{
+	text-decoration: none;
+}
+.fraud-container #fraud-buttons-container .fraud-buttons:hover{
+	opacity: 0.8; 
+}
+
+/* _________________________________________________upload files_________________________________________________ */
+#upload-container{
+	
+	width: 60%;
+	height: 1%;
+	border: 1px solid black;
+	margin: auto auto;
+	margin-top: 30px;
+	font-size: 20px;
+}
+#upload-header-container{
+	background-color:#5cb874; 
+	margin-top: 0px ;
+	border: 1px solid black;
+}
+#upload-header{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#upload-container .upload{
+	width: 95%;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
+
+#upload-container .upload .upload-form label{
+	padding-top: 5px;
+	margin-top: 10px;
+}
+#upload-container .upload .upload-form input{
+	padding: 5px;
+	margin: 10px;
+	width: 50%;
+}
+#upload-container .upload .upload-form textarea{
+	padding: 5px;
+	margin: 10px;
+	width: 50%;
+	height: 100px;
+} 
+#file{
+	border: 1px solid black;
+}
+#upload-container .upload .upload-form #btn{
+	width: 100%;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	margin: 40px auto 5px auto;
+	background-color: #5cb874;
+	border-style: none;
+}
+#upload-container .upload .upload-form #btn:hover{
+	opacity: 0.8;
+}
+
+/* ____________________________________________________________manual data entry form_____________________________________ */
+.fraud-container .manual-form form{
+	display: flex;
+	flex-direction: row;
+}

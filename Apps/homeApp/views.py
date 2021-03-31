@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.http.response import HttpResponseRedirect,HttpResponse
 from django.contrib.auth import get_user_model, authenticate
 from django.contrib.auth import authenticate, login, logout
+
 def base(request):
     return render(request,'homeApp/landing_page.html')
+    
+def upload_credit_data(request):
+    return render(request,'homeApp/upload_credit_data.html')
+def prediction_button(request):
+    return render(request,'homeApp/fraud_detection.html')
     
 def reports(request):
     return render(request,'homeApp/reports.html')
