@@ -21,14 +21,14 @@ Home | Fraud Detection System
 	</div>
 <!-- ___________________________________main-division____________________________________________ -->
 
-	<div class="fraud-container">
+	<div class="fraud-container" style="margin-bottom: 25px;">
 		<div class="fraud-header-container">
 			<h3 class="fraud-header">CHOOSE TYPE OF DATA YOU WANT TO CHECK FOR DETECTING FRAUD</h3>
 		</div>
 		<div id="fraud-buttons-container">
-			<a href=""><div class="fraud-buttons">ENTER FORM DATA MANUALLY</div></a>
-			<a href=""><div class="fraud-buttons">UPLOAD SINGLE CSV RECORD</div></a>
-			<a href=""><div class="fraud-buttons">UPLOAD MULTIPLE CSV RECORD</div></a>
+			<a href="{% url 'enter_form_data_manually' %}"><div class="fraud-buttons">ENTER FORM DATA MANUALLY</div></a>
+			<a href="{% url 'add_files_single'%} "><div class="fraud-buttons">UPLOAD SINGLE CSV RECORD</div></a>
+			<a href="{% url 'add_files_multi' %}"><div class="fraud-buttons">UPLOAD MULTIPLE CSV RECORD</div></a>
 		</div>
 	</div>
   </section><!-- End Hero -->

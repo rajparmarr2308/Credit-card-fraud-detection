@@ -35,10 +35,10 @@ Home | Fraud Detection System
                     <td>deasease data set</td>
                     <td>credit.csv</td>
                     <td>
-                        <a href="#"><button type="button" class="btn btn-primary">View Data</button></a>
+                        <a href="{% url 'view_data' %}"><button type="button" class="btn btn-primary">View Data</button></a>
                         <a href="#"><button type="button" class="btn btn-secondary">Delete</button></a>
                         <a href="{% url 'prediction_button' %}"><button type="button" class="btn btn-success">Prediction</button></a>
-                        <a href="#"><button type="button" class="btn btn-danger">Analysis</button></a>
+                        <a href="{% url 'analysis' %}"><button type="button" class="btn btn-danger">Analysis</button></a>
                         
                 </tr>
             </tbody> 

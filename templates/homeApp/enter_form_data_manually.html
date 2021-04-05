@@ -1,0 +1,296 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block css %}
+
+
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+ <!--__________________________________ header-box______________________________________________ -->
+ <div id="header-container">
+	<h1 id="header2">CREDIT DISEASE PREDICTION</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div class=fraud-container>
+	<div class=fraud-header-container>
+		<h3 class="fraud-header">CHECK YOUR CREDIT DISEASE</h3>
+	</div>
+	<div class="manual-form">
+		<form><main class="main" style="margin-bottom: 54px;
+			">
+			<div class="manual-inputfield">
+				<label>Time</label><br>
+				<input type="text" name="" placeholder="Enter value of Time">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V1</label><br>
+				<input type="text" name="" placeholder="Enter value of V1">
+			</div>
+			<div class="manual-inputfield">
+				<label>V2</label><br>
+				<input type="text" name="" placeholder="Enter value of V2">
+			</div>
+			<div class="manual-inputfield">
+				<label>V3</label><br>
+				<input type="text" name="" placeholder="Enter value of V3">
+			</div>
+			<div class="manual-inputfield">
+				<label>V4</label><br>
+				<input type="text" name="" placeholder="Enter value of V4">
+			</div>
+			<div class="manual-inputfield">
+				<label>V5</label><br>
+				<input type="text" name="" placeholder="Enter value of V5">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V6</label><br>
+				<input type="text" name="" placeholder="Enter value of V6">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V7</label><br>
+				<input type="text" name="" placeholder="Enter value of V7">
+			</div>
+			<div class="manual-inputfield">
+				<label>V8</label><br>
+				<input type="text" name="" placeholder="Enter value of V8">
+			</div>
+			<div class="manual-inputfield">
+				<label>V9</label><br>
+				<input type="text" name="" placeholder="Enter value of V9">
+			</div>
+			<div class="manual-inputfield">
+				<label>V10</label><br>
+				<input type="text" name="" placeholder="Enter value of V10">
+			</div>
+			<div class="manual-inputfield">
+				<label>V11</label><br>
+				<input type="text" name="" placeholder="Enter value of V11">
+			</div>
+			<div class="manual-inputfield">
+				<label>V12</label><br>
+				<input type="text" name="" placeholder="Enter value of V12">
+			</div>
+			<div class="manual-inputfield">
+				<label>V13</label><br>
+				<input type="text" name="" placeholder="Enter value of V13">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V14</label><br>
+				<input type="text" name="" placeholder="Enter value of V14">
+			</div>
+			<div class="manual-inputfield">
+				<label>V15</label><br>
+				<input type="text" name="" placeholder="Enter value of V15">
+			</div>
+			<div class="manual-inputfield">
+				<label>V16</label><br>
+				<input type="text" name="" placeholder="Enter value of V16">
+			</div>
+			<div class="manual-inputfield">
+				<label>V17</label><br>
+				<input type="text" name="" placeholder="Enter value of V17">
+			</div>
+			<div class="manual-inputfield">
+				<label>V18</label><br>
+				<input type="text" name="" placeholder="Enter value of V18">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V19</label><br>
+				<input type="text" name="" placeholder="Enter value of V19">
+			</div>
+			<div class="manual-inputfield">
+				<label>V20</label><br>
+				<input type="text" name="" placeholder="Enter value of V20">
+			</div>
+			<div class="manual-inputfield">
+				<label>V21</label><br>
+				<input type="text" name="" placeholder="Enter value of V21">
+			</div>
+			<div class="manual-inputfield">
+				<label>V22</label><br>
+				<input type="text" name="" placeholder="Enter value of V22">
+			</div>
+			<div class="manual-inputfield">
+				<label>V23</label><br>
+				<input type="text" name="" placeholder="Enter value of V23">
+			</div>
+			<div class="manual-inputfield">
+				<label>V24</label><br>
+				<input type="text" name="" placeholder="Enter value of V24">
+			</div>
+			<div class="manual-inputfield">
+				<label>V25</label><br>
+				<input type="text" name="" placeholder="Enter value of V25">
+			</div>
+			<div class="manual-inputfield">
+				<label>V26</label><br>
+				<input type="text" name="" placeholder="Enter value of V26">
+			</div>
+			<div class="manual-inputfield">
+				<label>V27</label><br>
+				<input type="text" name="" placeholder="Enter value of V27">
+			</div>
+			<div class="manual-inputfield">
+				<label>V28</label><br>
+				<input type="text" name="" placeholder="Enter value of V28">
+			</div>
+			<div class="manual-inputfield">
+				<label>Amount</label><br>
+				<input type="text" name="" placeholder="Enter value of Amount">
+			</div>
+			<div class='btn-cover2'>
+				<input type="button" name="" class="btn" value="CHECK AND SHOW RESULT"></div>
+		</main>
+			
+		</form>
+	</div>
+</div> 
+     
+
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}
+
+
+
+{% block style %}
+
+
+#main-container{
+	width: 70%;
+	margin:auto;
+	height: 250px;
+	margin-top: 10px; 
+	display: flex;
+	flex-direction: row;
+}
+#main-container .inner-box{
+
+	width: 200px;
+	height: 200px;
+	margin : auto auto;
+	border : 1px solid black;
+}
+#main-container .inner-box .circle{
+	fill: #5cb874;
+}
+footer{
+    margin-top: 24px;
+}
+.fraud-container{
+	width: 60%;
+	
+	border: 1px solid black;
+	margin: auto auto;
+	margin-top: 30px;
+}
+.fraud-container .fraud-header-container{
+	background-color:#5cb874; 
+	margin-top: 0px ;
+	border: 1px solid black;
+}
+.fraud-container .fraud-buttons-container{
+	display: flex;
+	flex-direction:column;
+	margin: 10px;
+	padding: 20px;
+}
+.fraud-container .fraud-header-container .fraud-header{
+	text-align: center;
+	color: #FFFFFF;
+}
+.fraud-container #fraud-buttons-container .fraud-buttons{
+	margin: 20px auto 20px auto;
+	padding: 15px;
+	width: 60%;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	background-color: #C95426;
+}
+.fraud-container #fraud-buttons-container a{
+	text-decoration: none;
+}
+.fraud-container #fraud-buttons-container .fraud-buttons:hover{
+	opacity: 0.8; 
+}
+.main{
+	margin-bottom: 103px;
+
+}
+
+
+#header-container{
+	background-color:#5cb874;
+	height: 100px;
+	box-sizing: border-box;
+}
+#header2{
+	color : #FFFFFF;
+	width: 70%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.fraud-container .manual-form .main{
+	display: grid;
+	grid-template-rows: repeat(8,100px);
+	grid-template-columns: repeat(4,1fr);
+
+}
+.fraud-container .manual-form .manual-inputfield{
+	padding: 20px;
+}
+.fraud-container .manual-form .manual-inputfield label{
+	margin: 10px;
+}
+.fraud-container .manual-form .manual-inputfield input{
+	margin: 10px;
+	padding: 5px;
+	width: 80%;
+	height: 50%;
+}
+.btn{
+	width: 100%;
+	margin-top: 42px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	background-color: #5cb874;
+	border-style: none;
+	 
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.btn-cover2{
+	width: 90%;
+	margin: 20px auto 10px auto;
+
+}
+
+
+
+{% endblock %}
+
+

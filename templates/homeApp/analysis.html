@@ -1,0 +1,145 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+<!--__________________________________ header-box______________________________________________ -->
+<div id="header-container">
+	<h1 id="header2">CREDIT CARD DATASET ANALYSIS</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div class="fraud-container" style="margin-bottom: 10px;">
+	<div class="fraud-header-container">
+		<h3 class="fraud-header">Analysis of the Dataset</h3>
+	</div>
+	<div class="result-table1">
+		<table>
+			
+			<tr>
+				<th>Algorithm Name</th>
+				<th>Accuracy Score</th>
+			</tr>
+			<tr>
+				<td>Type of Data</td>
+				<td>Empty DataFrame Columns:[] index:[]</td>
+			</tr>
+			<tr>
+				<td>Data Shape</td>
+				<td>(10000,31)</td>
+			</tr>
+			<tr>
+				<td>Unique Target Values</td>
+				<td>[0 1]</td>
+			</tr>
+			<tr>
+				<td>Percentage of patience without credit problems:</td>
+				<td>99.62%</td>
+			</tr>
+			<tr>
+				<td>Percentage of patience with credit problems:</td>
+				<td>0.38%</td>
+			</tr>
+			<tr>
+				<td>Is there any null values</td>
+				<td>False</td>
+			</tr>
+			<tr>
+				<td>Total Fraud Transaction in dataset(Data Shape)</td>
+				<td>(38,31)</td>
+			</tr>
+			<tr>
+				<td>Total Normal Transaction in dataset(Data Shape)</td>
+				<td>(9962,31)</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="fraud-header-container">
+		<h3 class="fraud-header">Credit Card Fraud Percentage according to dataset</h3>
+	</div>
+
+	
+
+</div>
+
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}
+
+
+{% block style %}
+
+.btn{
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	background-color: #5cb874;
+	border-style: none;
+	 
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.btn-cover{
+	width: 90%;
+	margin: 20px auto 10px auto;
+
+}
+
+.fraud-container .result-tabel1 table,th,td{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	border-spacing: 0px;
+
+}
+.fraud-container .result-table1 table,h3{
+	width: 100%;
+	text-align: center;
+}
+.fraud-container .result-table1 h3{
+	color:#5cb874 ;
+}
+
+.fraud-container .result-table1 td,th {
+	padding: 10px;
+}
+.fraud-container .result-table1 th{
+	background-color: #5cb874;
+	color: #FFFFFF;
+}
+.fraud-container .result-table1 table{
+	margin-bottom:20px;
+	margin-top:20px; 
+}
+.fraud-container .result-table1 .c-odd{
+	background-color: #5cb874;
+	width: 20%;
+	color: #FFFFFF;
+}
+.result-table1 table {
+  table-layout: fixed ;
+  width: 100% ;
+  border-spacing: 0px;
+}
+.result-table1 td {
+  width: 25% ;
+}
+
+{% endblock %}

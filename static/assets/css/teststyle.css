@@ -146,3 +146,12 @@ html,body{
 	display: flex;
 	flex-direction: row;
 }
+/* add files */
+.fraud-container .singlefilediv form{
+	padding: 10px;
+	margin: 10px;
+}
+.fraud-container .singlefilediv form input{
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+}

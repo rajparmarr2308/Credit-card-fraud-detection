@@ -13,6 +13,21 @@ def prediction_button(request):
     
 def reports(request):
     return render(request,'homeApp/reports.html')
+    
+def enter_form_data_manually(request):
+    return render(request,'homeApp/enter_form_data_manually.html')
+def add_files_single(request):
+    return render(request,'homeApp/add_files_single.html')
+def add_files_multi(request):
+    return render(request,'homeApp/add_files_multi.html')
+def account_details(request):
+    return render(request,'homeApp/account_details.html')
+def change_password(request):
+    return render(request,'homeApp/change_password.html')
+def analysis(request):
+    return render(request,'homeApp/analysis.html')
+def view_data(request):
+    return render(request,'homeApp/view_data.html')
 
 def userLogout(request):
     try:
