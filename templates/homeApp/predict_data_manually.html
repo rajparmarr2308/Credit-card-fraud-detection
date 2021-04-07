@@ -1,0 +1,258 @@
+
+
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+<!--__________________________________ header-box______________________________________________ -->
+<div id="header-container">
+	<h1 id="header2">Manual  Record Result
+	</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div class=fraud-container style="margin-bottom: 10px;">
+	<div class="fraud-header-container">
+		<h3 class="fraud-header">Credit Card Fraud Detection System - Fruad Analysis</h3>
+	</div>
+	<div class="result-table1">
+		<table>
+			<h3>Algorithm Used</h3>
+			<tr>
+				<th>Algorithm Name</th>
+				<th>Accuracy Score</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>Logistic Regression</td>
+				<td>99.89</td>
+				<td>Valid Transaction</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="result-table1">
+		<table>
+			<tr>
+				<th class="c-odd">Label</th>
+				<th>Value</th>
+				<th class="c-odd">Label</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td class="c-odd">Time</td>
+				<td>0</td>
+				<td class="c-odd">Amount</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V1</td>
+				<td>0</td>
+				<td class="c-odd">V2</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V3</td>
+				<td>0</td>
+				<td class="c-odd">V4</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V5</td>
+				<td>0</td>
+				<td class="c-odd">V6</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V7</td>
+				<td>0</td>
+				<td class="c-odd">V8</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V9</td>
+				<td>0</td>
+				<td class="c-odd">V10</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V11</td>
+				<td>0</td>
+				<td class="c-odd">V12</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V13</td>
+				<td>0</td>
+				<td class="c-odd">V14</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V15</td>
+				<td>0</td>
+				<td class="c-odd">V16</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V17</td>
+				<td>0</td>
+				<td class="c-odd">V18</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V19</td>
+				<td>0</td>
+				<td class="c-odd">V20</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V21</td>
+				<td>0</td>
+				<td class="c-odd">V22</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V23</td>
+				<td>0</td>
+				<td class="c-odd">V24</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V25</td>
+				<td>0</td>
+				<td class="c-odd">V26</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class="c-odd">V27</td>
+				<td>0</td>
+				<td class="c-odd">V28</td>
+				<td>0</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}
+
+{% block style %}
+
+.btn{
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	background-color: #5cb874;
+	border-style: none;
+	 
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.btn-cover{
+	width: 90%;
+	margin: 20px auto 10px auto;
+
+}
+
+.fraud-container .result-tabel1 table,th,td{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	border-spacing: 0px;
+
+}
+.fraud-container .result-table1 table,h3{
+	width: 100%;
+	text-align: center;
+}
+.fraud-container .result-table1 h3{
+	color:#5cb874 ;
+}
+
+.fraud-container .result-table1 td,th {
+	padding: 10px;
+}
+.fraud-container .result-table1 th{
+	background-color: #5cb874;
+	color: #FFFFFF;
+}
+.fraud-container .result-table1 table{
+	margin-bottom:20px;
+	margin-top:20px; 
+}
+.fraud-container .result-table1 .c-odd{
+	background-color: #5cb874;
+	width: 20%;
+	color: #FFFFFF;
+}
+.result-table1 table {
+  table-layout: fixed ;
+  width: 100% ;
+  border-spacing: 0px;
+}
+.result-table1 td {
+  width: 25% ;
+}
+.fraud-container .table2{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	border-style: none;
+	border-spacing: 0px;
+}
+.fraud-container .table2 .table2-c{
+	padding: 10px;
+	border-style:none;
+	border-width: 0px;
+}
+
+
+.fraud-container .table2 .table2-r{
+	background-color: #5cb874;
+	color: #FFFFFF;
+	border-style: none;
+}
+.fraud-container .table2 #view{
+	background-color: #00FF00;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 0px;
+}
+.fraud-container .table2 #del{
+	background-color: #800000;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 0px;
+}
+.fraud-container .table2 #pre{
+	background-color: #008000;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 0px;
+}
+.fraud-container .table2 #ana{
+	background-color: #00FFFF;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 0px;
+}
+{% endblock %}
+

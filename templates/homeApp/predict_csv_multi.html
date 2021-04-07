@@ -1,0 +1,134 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+{% endblock %}
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;"></section> 
+         <!--__________________________________ header-box______________________________________________ -->
+ <div id="header-container">
+	<h1 id="header2">Multi data Csv Prediction Result</h1>
+
+</div>
+<div class="container" style="width: 90%;margin-top: 13px;" >
+<table id="example" class="table table-striped table-bordered dt-responsive nowrap table-wrapper-scroll-y my-custom-scrollbar" style="width:100%;">
+  <thead>
+      <tr>
+          <th>Sr No.</th>
+          <th>Fraud or Not</th>
+          
+          <th>Time</th>
+          <th>V1</th>
+          <th>V2</th>
+          <th>V3</th>
+          <th>V4</th>
+          <th>V5</th>
+          <th>V6</th>
+          <th>V7</th>
+          <th>V8</th>
+          <th>V9</th>
+          <th>V10</th>
+          <th>V11</th>
+          <th>V12</th>
+          <th>V13</th>
+          <th>V14</th>
+          <th>V15</th>
+          <th>V16</th>
+          <th>V17</th>
+          <th>V18</th>
+          <th>V19</th>
+          <th>V20</th>
+          <th>V21</th>
+          <th>V22</th>
+          <th>V23</th>
+          <th>V24</th>
+          <th>V25</th>
+          <th>V26</th>
+          <th>V27</th>
+          <th>V28</th>
+          <th>Amount</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Fraud Transaction</td>
+          <td>1.0 </td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>Edinburgh</td>
+          <td>8.90</td>
+      </tr>
+      
+      
+    </tbody>  
+</table>
+</div>
+    </section><!-- End Hero -->
+  
+    </main>
+
+
+    <script>
+      $(document).ready(function() {
+        $('#example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+            { 
+          extend: 'copy',
+          text: 'Copy'
+       },
+            { 
+          extend: 'excel',
+          text: 'Download excel'
+       },
+           
+           
+            ],
+            initComplete: function () {
+                var btns = $('.dt-button');
+                btns.addClass('btn btn-primary btn-sm ');
+                btns.removeClass('dt-button');
+    
+            }
+        } );
+    } );
+    </script>
+{% endblock %}
+
+

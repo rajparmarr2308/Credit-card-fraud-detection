@@ -11,6 +11,8 @@ Home | Fraud Detection System
 {% endblock %}
 {% block content %}
 <main id="main" >
+  
+	  
 
     <!-- ======= Hero Section ======= -->
     <section id="homesection" style="padding: 0px 0px;">
@@ -19,28 +21,30 @@ Home | Fraud Detection System
 	<h1 id="header2">ALL CREDIT CARD DATASET</h1>
 
 </div>
-        <table id="example" class="table table-striped" style="width:70%;margin: 1% 10%;" >
+        <table id="example" class="table table-striped" style="width:90%;margin: 1% 4%;" >
             <thead style="background-color: brown;text-align: center;">
                 <tr>
                     <th>Sr. No</th>
                     <th>File name</th>
-                    <th>Original Filename</th>
+                    <th>Description</th>
                     <th>Action</th>
                     
                 </tr>
             </thead>
             <tbody style="text-align: center;">
+                {% for i in all_files %}
                 <tr>
-                    <td>1</td>
-                    <td>deasease data set</td>
-                    <td>credit.csv</td>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{i.file_name}}</td>
+                    <td>{{i.description |truncatechars:60}}</td>
                     <td>
                         <a href="{% url 'view_data' %}"><button type="button" class="btn btn-primary">View Data</button></a>
-                        <a href="#"><button type="button" class="btn btn-secondary">Delete</button></a>
+                        <a href="{% url 'delete_data' i.id %}"><button type="button" class="btn btn-secondary">Delete</button></a>
                         <a href="{% url 'prediction_button' %}"><button type="button" class="btn btn-success">Prediction</button></a>
                         <a href="{% url 'analysis' %}"><button type="button" class="btn btn-danger">Analysis</button></a>
                         
                 </tr>
+                {% endfor %}
             </tbody> 
         </table>   
      

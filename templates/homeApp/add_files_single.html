@@ -26,10 +26,11 @@ Home | Fraud Detection System
 		<h3 class="fraud-header">UPLOAD CSV FILE WITH SINGLE RECORD</h3>
 	</div>
 	<div class="singlefilediv">
-		<form>
+		<form method="POST" action="{% url 'predict_csv_single' %}">
+			{% csrf_token %}
 			<label>Choose Single Recored CSV File</label><br>
 			<input class="file" type="FILE" name=""><br>
-			<input  class="btn" type="button" name="" value="SUBMIT">
+			<input  class="btn" type="submit" name="" value="SUBMIT">
 		</form>
 	</div>
 </div>

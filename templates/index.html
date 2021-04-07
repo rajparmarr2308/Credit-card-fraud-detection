@@ -66,7 +66,11 @@
   .table-wrapper-scroll-y {
     display: block;
   }
-  
+  .alert-icon-aside svg{
+  margin-top: 12px;
+    margin-left: 27px;
+    margin-right: 15px;
+  }
 {% block style %}
 
 {% endblock %}
@@ -121,6 +125,21 @@
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
+
+  {% if messages %} {% for message in messages %}
+  <div class="alert alert-success alert-icon" role="alert" style="display: flex;">
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true" style="margin-top: 2px;">×</span>
+    </button>
+    <div class="alert-icon-aside">
+      <i class="fa fa-check"></i>
+    </div>
+    <div class="alert-icon-content">
+      <h6 class="alert-heading">{{ message }}</h6>
+    </div>
+  </div>
+  {% endfor %} {% endif %}
+
   {% block content %}
   
     {% endblock %}

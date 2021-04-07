@@ -29,7 +29,10 @@ Home | Fraud Detection System
 		<h3 class="fraud-header">CHECK YOUR CREDIT DISEASE</h3>
 	</div>
 	<div class="manual-form">
-		<form><main class="main" style="margin-bottom: 54px;
+		<form method="POST" action="{% url 'predict_data_manually' %}">
+			{% csrf_token %}
+
+			<main class="main" style="margin-bottom: 54px;
 			">
 			<div class="manual-inputfield">
 				<label>Time</label><br>
@@ -157,7 +160,7 @@ Home | Fraud Detection System
 				<input type="text" name="" placeholder="Enter value of Amount">
 			</div>
 			<div class='btn-cover2'>
-				<input type="button" name="" class="btn" value="CHECK AND SHOW RESULT"></div>
+				<input type="submit" name="" class="btn" value="CHECK AND SHOW RESULT"></div>
 		</main>
 			
 		</form>
