@@ -23,12 +23,50 @@
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
   <!-- Template Main CSS File -->
+
+   <!-- all.min.js -->
+   <script data-search-pseudo-elements="" defer=""
+   src="{% static 'assets/js/all.min.js' %}" crossorigin="anonymous"></script>
+<!-- feather.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous">
+</script>
+<!-- select2.min.js -->
+<script src="{% static 'assets/js/select2.min.js' %}"></script>
+<!-- jquery-3.5.1.js -->
+<script type="text/javascript" src="{% static 'assets/js/jquery-3.5.1.js' %}"></script>
+<!-- select2.min.css -->
+<link href="{% static 'assets/css/select2.min.css' %}" rel="stylesheet" />
+<!-- jquery.dataTables.min.js -->
+<script type="text/javascript" src="{% static 'assets/js/jquery.dataTables.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'assets/js/dataTables.buttons.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jszip.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/pdfmake.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/buttons.html5.min.js' %}"></script>
+<!-- jquery.dataTables.min.css -->
+<link rel="stylesheet" href="{% static 'assets/css/jquery.dataTables.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/w3.css' %}">
+
+
   {% block css %}
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
   {% endblock %}
 </head>
 
 <style>
+  th {
+    text-align: center;
+  }
+  .my-custom-scrollbar {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+  
 {% block style %}
 
 {% endblock %}
@@ -124,6 +162,10 @@
   <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
   <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
+  
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/scripts.js' %}"></script>
+  <script src="{% static 'assets/js/fstdropdown.js' %}"></script>
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
   
