@@ -1,0 +1,8 @@
+Due to space issues you can download creditcard.csv file from below link 
+
+
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud 
+
+***Click on Right side Black Download Button***
+
+and add it in you main folder where main file is situated with creditcard.csv file.

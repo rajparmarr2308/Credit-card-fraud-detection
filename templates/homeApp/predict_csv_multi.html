@@ -26,7 +26,6 @@ Home | Fraud Detection System
       <tr>
           <th>Sr No.</th>
           <th>Fraud or Not</th>
-          
           <th>Time</th>
           <th>V1</th>
           <th>V2</th>
@@ -60,41 +59,42 @@ Home | Fraud Detection System
       </tr>
   </thead>
   <tbody>
-      <tr>
-          <td>1.</td>
-          <td>Fraud Transaction</td>
-          <td>1.0 </td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>Edinburgh</td>
-          <td>8.90</td>
-      </tr>
-      
+    {% for item in combined_data %}
+       <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ item.status }}</td>
+          <td>{{ item.record.Time }}</td>
+          <td>{{ item.record.V1 }}</td>
+          <td>{{ item.record.V2 }}</td>
+          <td>{{ item.record.V3 }}</td>
+          <td>{{ item.record.V4 }}</td>
+          <td>{{ item.record.V5 }}</td>
+          <td>{{ item.record.V6 }}</td>
+          <td>{{ item.record.V7 }}</td>
+          <td>{{ item.record.V8 }}</td>
+          <td>{{ item.record.V9 }}</td>
+          <td>{{ item.record.V10 }}</td>
+          <td>{{ item.record.V11 }}</td>
+          <td>{{ item.record.V12 }}</td>
+          <td>{{ item.record.V13 }}</td>
+          <td>{{ item.record.V14 }}</td>
+          <td>{{ item.record.V15 }}</td>
+          <td>{{ item.record.V16 }}</td>
+          <td>{{ item.record.V17 }}</td>
+          <td>{{ item.record.V18 }}</td>
+          <td>{{ item.record.V19 }}</td>
+          <td>{{ item.record.V20 }}</td>
+          <td>{{ item.record.V21 }}</td>
+          <td>{{ item.record.V22 }}</td>
+          <td>{{ item.record.V23 }}</td>
+          <td>{{ item.record.V24 }}</td>
+          <td>{{ item.record.V25 }}</td>
+          <td>{{ item.record.V26 }}</td>
+          <td>{{ item.record.V27 }}</td>
+          <td>{{ item.record.V28 }}</td>
+          <td>{{ item.record.Amount }}</td>
+      </tr> 
+    {% endfor %}
       
     </tbody>  
 </table>
@@ -125,7 +125,9 @@ Home | Fraud Detection System
                 btns.addClass('btn btn-primary btn-sm ');
                 btns.removeClass('dt-button');
     
-            }
+            },
+            pageLength: 100,
+            lengthMenu: [[100, 250, 500, 1000], [100, 250, 500, 1000]]
         } );
     } );
     </script>

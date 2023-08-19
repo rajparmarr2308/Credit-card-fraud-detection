@@ -37,8 +37,8 @@ Home | Fraud Detection System
 			</tr>
 			<tr>
 				<td>Logistic Regression</td>
-				<td>99.89</td>
-				<td>Valid Transaction</td>
+				<td>{{ precision }}</td>
+				<td>{{ status }}</td>
 			</tr>
 		</table>
 	</div>
@@ -48,7 +48,7 @@ Home | Fraud Detection System
 	</div>
 
 	<div class="result-table1">
-		<table>
+		{% comment %} <table>
 			<tr>
 				<th class="c-odd">Label</th>
 				<th>Value</th>
@@ -145,7 +145,20 @@ Home | Fraud Detection System
 				<td class="c-odd">V28</td>
 				<td>0</td>
 			</tr>
-		</table>
+		</table> {% endcomment %}
+
+    <table>
+    <tr>
+        <th class="c-odd">Label</th>
+        <th>Value</th>
+    </tr>
+    {% for key, value in data.items %}
+        <tr>
+            <td class="c-odd">{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+</table>
 	</div>
 </div>
 
